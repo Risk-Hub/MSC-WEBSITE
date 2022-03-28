@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
 
-function App() {
+function Events() {
   return (
     <div className="App">
      <Navbar/>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Events;
