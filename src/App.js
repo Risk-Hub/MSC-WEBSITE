@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
-import Event  from './Events/Event';
+import Event  from './Events/Events';
 
 function App() {
   return (
