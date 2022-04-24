@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
-import Event  from './Events/Events';
+import Events  from './Events/Events.js';
 
 function App() {
   return (
     <div className="App">
-     <Navbar/>
+     <Events/>
     </div>
   );
 }
