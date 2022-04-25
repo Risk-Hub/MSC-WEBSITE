@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.totalPage{
+   border:2px solid black;
+   
+}
+.changingButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ongoingProjects{
+    margin-right: 4px;
+    box-shadow: 8px 0px 4px 0px  green;
+}
+.Heading{
+    text-align: center;
+}
+.Projects{
+    display: flex;
+    flex-direction: row;
+    border:2px solid red;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+    margin-left: 10vw;
+}
+.projectHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.tech-stack{
+    /* border:2px solid black; */
+}
+.name{
+    font-size: 2rem;
+    /* border:2px solid yellow; */
+}
+.project-about{
+    width:60vw;
+    /* border: 2px solid green; */
+    font-size: 1.3rem;
+}
+.project-image{
+    /* border: 2px solid blue; */
+    display: flex;        
+    justify-content: flex-start;
+}
+.number{
+    /* border: 2px solid red; */
+ 
+    font-size: 10rem;
+    font-family: 'Poppins', sans-serif;
+    /* border:2px solid blue; */
+}
+
+.lang{
+    width:2rem;
+}
+.thumbnailImgLeft{
+    width:20vw;
+    height:40vh;
+    margin-left: 0;
+    margin-top:2vh;
+    border-radius: 1em;
+}
+.thumbnailImgRight{
+    width:20vw;
+    height:40vh;
+    margin: 2vh 4vw;
+    border-radius: 1em;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    /* border:2px solid yellow */
+}
+.timeTaken, .githubLink, .websiteLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid red; */
+    width:10vw;
+}
+.githubLinkText, .websiteLinkText{
+    text-decoration: none;
+    color:black;
+}
+.clock-time , .github, .website{
+    width:1em;
+}
