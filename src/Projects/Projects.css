@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+input{
+    outline: none;
+}
 .totalPage{
    border:2px solid black;
    /* background: url('img/background.jpeg'); */
@@ -14,11 +16,20 @@
 }
 .ongoingProjects{
     margin-right: 4px;
-    box-shadow: 8px 0px 4px 0px  green;
+    /* box-shadow: 8px 0px 4px 0px  green; */
+    border-right:1px solid grey;
 }
 .buttons{
     
-    margin-top: 110vh;
+    margin-top: 70vh;
+}
+#borderUp{
+    border-top:3px solid grey;
+    
+}
+#borderDown{
+    border-bottom:3px solid grey;
+
 }
 .ongoingProjectSection{
     margin-top: 10vh;
@@ -27,18 +38,19 @@
     margin-top: 10vh;
 }
 .Heading{
-    text-align: left;
-    color:blue;
+    text-align: center;
+    color:white;
     margin-left: 2vw;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    font-size: 100px;
 }
 .Projects{
     display: flex;
     flex-direction: row;
     /* border:2px solid red; */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width:80vw;
     margin-left: 10vw;
 }
