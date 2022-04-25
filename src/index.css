@@ -5,6 +5,8 @@ body{
     padding: 0px;
     /* background-color: #000000; */
     font-family: 'Lato', sans-serif;
+    background-image: url(./images/background.jpeg);
+    background-repeat: no-repeat;
 }
 *{
     box-sizing: border-box;
@@ -27,6 +29,8 @@ input{
     width: 90px;
 }
 nav{
+    
+    background-image: url(./images/background.jpeg);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

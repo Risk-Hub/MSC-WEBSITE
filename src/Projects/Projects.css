@@ -3,8 +3,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
 .totalPage{
    border:2px solid black;
-   background: url('img/background.jpeg');
-   background-repeat: no-repeat;
+   /* background: url('img/background.jpeg'); */
+   /* background-repeat: no-repeat; */
 }
 .changingButtons{
     display: flex;
