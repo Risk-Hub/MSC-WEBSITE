@@ -5,7 +5,7 @@ import Projects from './Projects/Projects'
 function App() {
   return (
     <div className="App">
-     {/* <Events/> */}
+     <Events/>
      <Projects/>
     </div>
   );

@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
 .totalPage{
    border:2px solid black;
-   
+   background: url('img/background.jpeg');
+   background-repeat: no-repeat;
 }
 .changingButtons{
     display: flex;
@@ -13,13 +16,27 @@
     margin-right: 4px;
     box-shadow: 8px 0px 4px 0px  green;
 }
+.buttons{
+    
+    margin-top: 110vh;
+}
+.ongoingProjectSection{
+    margin-top: 10vh;
+}
+.pastProjectSection{
+    margin-top: 10vh;
+}
 .Heading{
-    text-align: center;
+    text-align: left;
+    color:blue;
+    margin-left: 2vw;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 }
 .Projects{
     display: flex;
     flex-direction: row;
-    border:2px solid red;
+    /* border:2px solid red; */
     justify-content: center;
     align-items: center;
     width:80vw;
@@ -37,11 +54,15 @@
 .name{
     font-size: 2rem;
     /* border:2px solid yellow; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .project-about{
     width:60vw;
     /* border: 2px solid green; */
     font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 .project-image{
     /* border: 2px solid blue; */

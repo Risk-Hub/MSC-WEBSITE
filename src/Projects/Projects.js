@@ -18,8 +18,8 @@ function Projects() {
 
         {/* button for switching to ongoing and past projects */}
         <div className="changingButtons">
-        <button onClick={()=>setToggle(0)} className="ongoingProjects"><img src={ongoing} alt="" /></button>
-        <button onClick={()=>setToggle(1)}   className="pastProjects"><img src={past} alt="" /></button>
+        <button onClick={()=>setToggle(0)} className="ongoingProjects buttons"><img src={ongoing} alt="" /></button>
+        <button onClick={()=>setToggle(1)}   className="pastProjects buttons"><img src={past} alt="" /></button>
         </div>
         
 
