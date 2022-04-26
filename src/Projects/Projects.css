@@ -5,37 +5,6 @@ input{
 }
 .totalPage{
    border:2px solid black;
-   /* background: url('img/background.jpeg'); */
-   /* background-repeat: no-repeat; */
-}
-.changingButtons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.ongoingProjects{
-    margin-right: 4px;
-    /* box-shadow: 8px 0px 4px 0px  green; */
-    border-right:1px solid grey;
-}
-.buttons{
-    
-    margin-top: 70vh;
-}
-#borderUp{
-    border-top:3px solid grey;
-    
-}
-#borderDown{
-    border-bottom:3px solid grey;
-
-}
-.ongoingProjectSection{
-    margin-top: 10vh;
-}
-.pastProjectSection{
-    margin-top: 10vh;
 }
 .Heading{
     text-align: center;
@@ -45,14 +14,68 @@ input{
     font-family: 'Poppins', sans-serif;
     font-size: 100px;
 }
+.changingButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100vh;
+}
+.changingButtons img{
+    width:20vw;
+}
+.ongoingProjects{
+    margin-right: 4px;
+    border-radius: 2rem;
+   cursor: pointer;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.pastProjects{
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 2rem;
+}
+.borderUp{
+    border-radius: 2rem;
+    margin-right: 3px;
+ 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+ }
+
+.borderDown{
+   
+    margin-right: 3px;
+    border-radius: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+    cursor: pointer;
+}
+.buttonLeft{
+    border-bottom:3px solid grey;
+}
+.buttonRight{
+    border-bottom: 3px solid grey;
+}
+.ongoingProjectSection{
+    margin-top: 10vh;
+}
+.pastProjectSection{
+    margin-top: 10vh;
+}
+
 .Projects{
     display: flex;
     flex-direction: row;
-    /* border:2px solid red; */
     justify-content: center;
     align-items: flex-start;
     width:80vw;
     margin-left: 10vw;
+}
+.number-col{
+    
+}
+.number{
+    
 }
 .projectHeading{
     display: flex;

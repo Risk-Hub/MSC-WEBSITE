@@ -18,8 +18,8 @@ function Projects() {
 
         {/* button for switching to ongoing and past projects */}
         <div className="changingButtons">
-        <div onClick={()=>setToggle(0)} className="ongoingProjects buttons {toggle===0 ? `borderUp` : null }"><img src={ongoing} alt="" /></div>
-        <div onClick={()=>setToggle(1)}   className="pastProjects buttons {toggle===0 ? `borderDown` : null }"><img src={past} alt="" /></div>
+        <div onClick={()=>setToggle(0)} className={toggle===0 ? `borderUp` : `ongoingProjects` }><img src={ongoing} alt="" /></div>
+        <div onClick={()=>setToggle(1)}   className={toggle===1 ? `borderDown ` : `pastProjects` }><img src={past} alt="" /></div>
         </div>
         
         {/* switching using ternary operator */}
@@ -29,7 +29,7 @@ function Projects() {
           <div className="Projects">
               <div className="number-col">
 
-              <h1 className="number">1</h1>z
+              <h1 className="number">1</h1>
               </div>
             
 
