@@ -2,6 +2,9 @@ import React from "react";
 import "./Footer.css";
 import mscfooterlogo from "../images/mscfooterlogo.png";
 import mscfooterbgimage from "../images/mscfooterbgimage.png";
+import fb from "../images/fb.png";
+import insta from "../images/insta.png";
+import linkedin from "../images/linkedin.png";
 
 function Footer() {
   return (
@@ -26,9 +29,9 @@ function Footer() {
             <div className="col">
               <h4>FOLLOW US</h4>
               <ui className="list-unstyled">
-                <li>Linked In</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
+                <li><a href="#"><img src={linkedin} alt="" /></a></li>
+                <li><a href="#"><img src={fb} alt="" /></a></li>
+                <li><a href="#"><img src={insta} alt="" /></a></li>
               </ui>
             </div>
           </div>
