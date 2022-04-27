@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.top__leads{
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading{
+  color: blue;
+  padding: 50px;
+}
