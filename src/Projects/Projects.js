@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
+import footer from "./Footer.js"
 // import './img/c-language.png';
 import c from "./img/c-language.png";
 import thumbnailImg from "./img/comp1.jpg";
@@ -9,12 +10,18 @@ import github from "./img/github.png";
 import website from "./img/link.png";
 import ongoing from "./img/ongoing.png";
 import past from "./img/past.png";
+import Footer from "./Footer.js";
+import Thumbnail from "./img/projectThumbnail.png"
 function Projects() {
   const [toggle, setToggle] = useState(0);
   return (
-    <div>
+    <div className="bodyArea">
       <div className="totalPage">
-        <h2 className="Heading">PROJECTS</h2>
+        <div className="topHeading">
+          <h2 className="Heading">PROJECTS</h2>
+          <img src={Thumbnail} alt="" className="thumbnailImg" />
+        </div>
+
 
         {/* button for switching to ongoing and past projects */}
         <div className="changingButtons">
@@ -31,7 +38,7 @@ function Projects() {
 
               <h1 className="number">1</h1>
               </div>
-            
+            <img src="" alt="" className="thumbnail" />
 
             <div className="info-col">
               <div className="name">PROJECT NAME</div>
@@ -257,9 +264,13 @@ function Projects() {
           </div>
      </div>
         }
-
+      <Footer/>
+      
       </div>
+      
     </div>
+
+
   );
 }
 export default Projects;
