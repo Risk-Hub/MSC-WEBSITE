@@ -8,41 +8,32 @@ import linkedin from "./img/linkedin.png";
 
 function Footer() {
   return (
-    
-      <div className="container">
-        <img src={mscfooterbgimage} alt="" className="bg-img" />
-        <div id="row">
-          {/* Column1 */}
-          <div className="about-image">
-            <img src={mscfooterlogo} alt="" />
-          </div>
-          {/* Column2 */}
-          <div id="right">
-            <div className="contact-info">
+    <div className="footer-container">
+      <img className="footer-bg-image" src={mscfooterbgimage} alt="footer bg" />
+      <div className="footer-content">
+          <img className="footer-logo" src={mscfooterlogo} alt="footer logo" />
+          <div className="footer-links">
+            <div className="contact-us">
               <h4>Contact us</h4>
-              <ui className="list-unstyled">
+              <ul>
                 <li>Jane Cooper (239) 555-0108</li>
                 <li>Jane Cooper (239) 555-0108</li>
-              </ui>
+              </ul>
             </div>
-            {/* Column3 */}
-            <div className="col">
-              <h4>FOLLOW US</h4>
-              <ui className="list-unstyled">
-                <li><a href="#"><img src={linkedin} alt="" /></a></li>
-                <li><a href="#"><img src={fb} alt="" /></a></li>
-                <li><a href="#"><img src={insta} alt="" /></a></li>
-              </ui>
+            <div className="social-info">
+              <h4>Follow us</h4>
+              <ul>
+                <li><a href="https://linkedin.com/"><img src={linkedin} alt="" /></a></li>
+                <li><a href="https://facebook.com/"><img src={fb} alt="" /></a></li>
+                <li><a href="https://instagram.com/"><img src={insta} alt="" /></a></li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} Made ❤️ from blah blah
-          </p>
-        </div>
       </div>
-  
+      <p className="copyright">
+        &copy;{new Date().getFullYear()} Made with ❤️ by MSC
+      </p>
+    </div>
   );
 }
 
