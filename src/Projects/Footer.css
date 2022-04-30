@@ -1,75 +1,88 @@
-.about-image {
-  width: 46%;
-  display: inline-block;
-  margin-top: 3.5em;
-}
-.about-image img {
-  height: 12em;
-  width: 36.7em;
-}
-.main-footer {
-  /* border:2px solid red; */
-  margin: 0;
+.footer-container {
   position: relative;
-  bottom: 0;
   width: 100%;
-  height: 50vh; /* Height of the footer */
-  /* background: #6cf; */
+  height: 35rem;
 }
-.container {
-  /* margin-top: 34em; */
+.footer-container > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
 }
-.container .bg-img {
-  height: 37em;
-  width: 78.97em;
-}
-#row {
-  margin-top: -23em;
-}
-#right {
-  color: white;
-}
-.contact-info {
-  max-width: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  margin-left: 63em;
-  list-style: none;
-  margin-top: -9em;
-}
-.contact-info h4 {
-  margin-bottom: 5px;
-}
-.col {
-  max-width: 250px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  margin-bottom: 20px;
-  margin-left: 63em;
-  list-style: none;
-}
-.col h4 {
-  margin-bottom: 5px;
-}
-.col ui {
+
+.footer-content{
+  position: absolute;
+  top: 18rem;
   display: flex;
   justify-content: space-between;
-  width: 6em;
+  width: 100%;
+  padding: 0 3rem;
 }
-.mscfooterlogo {
-  width: 50%;
+
+.footer-logo{
+  height: 6rem;
+  width: 19rem;
 }
-.mscfooterlogo img {
-  width: 600px;
-}
-.row p {
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.row {
-  margin-top: 4em;
+
+.footer-links{
+  /* margin-right: 4rem; */
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.social-info > ul{
+  display: flex;
+  gap: .5rem;
+}
+.contact-us > h4,ul, .social-info > h4{
+  margin: .5rem;
+}
+li{
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    height: 25rem
+  }
+  .footer-container > img {
+    object-fit: cover;
+  }
+  .copyright{
+    font-size: .7rem;
+  }
+  .footer-content{
+    top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 .5rem;
+  }
+  .footer-logo{
+    height: 3.15rem;
+    width: 10rem;
+  }
+  .social-info, .contact-us{
+    font-size: .7rem;
+  }
+  .footer-links{
+    flex-direction: row;
+    gap: 4rem;
+    margin: auto;
+  }
+  .contact-us > h4,ul, .social-info > h4{
+    padding: 0;
+  }
 }
