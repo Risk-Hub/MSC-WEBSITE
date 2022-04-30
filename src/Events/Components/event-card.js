@@ -1,13 +1,13 @@
 import React from "react";
-import './Slider.css'
-import { MdChevronRight , MdChevronLeft} from 'react-icons/md';
+import './event-card.css'
+import {MdChevronRight,MdChevronLeft} from 'react-icons/md';
 const ReactCardSlider =(props)=>{
     const slides = [1,2,3,4,5,6,7,8];
 
     
-    const slideLeft = ()=>{
+    const slideLeft =()=>{
         var slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft + 240;
+        slider.scrollRight = slider.scrollLeft + 240;
 
     }
     const slideRight = ()=>{
@@ -19,7 +19,7 @@ const ReactCardSlider =(props)=>{
         
         <div id="main-slider-container">
             <MdChevronLeft size={40} className="slider-icon left" onClick={slideLeft}/> 
-            <MdChevronRight size={40} className="slider-icon right" onClick={slideRight}/>            <div id="slider">
+                        <div id="slider">
                 {
                 slides.map((slide,index)=>{
                     return(
@@ -28,7 +28,10 @@ const ReactCardSlider =(props)=>{
                             </div>
                             <p className="slider-card-title">Event Name</p>
                             <p className="slider-card-description">Event Description</p>
-                            
+                            <p>Held on : dd/mm/yyyy</p>
+                            <p>Duration of the event : xx days</p>
+                            <p>number of participants : xx</p>
+                            <p>mode of conduct : offline/online/hybrid</p>                            
                             
 
 
@@ -40,7 +43,7 @@ const ReactCardSlider =(props)=>{
             
                
             </div>
-            <MdChevronRight size={40} className="slider-icon right" onClick={slideRight}/>
+            <MdChevronRight size={40} className="slider-icon right" onClick={slideLeft}/>
             <div></div>
 
         </div>
