@@ -18,7 +18,10 @@ function Projects() {
     <div className="bodyArea">
       <div className="totalPage">
         <div className="topHeading">
-          <h2 className="Heading">PROJECTS</h2>
+          <div className="leftHeading">
+            <h2 className="Heading">PROJECTS</h2>
+            
+          </div>
           <img src={Thumbnail} alt="" className="thumbnailImg" />
         </div>
 
@@ -38,7 +41,7 @@ function Projects() {
 
               <h1 className="number">1</h1>
               </div>
-            <img src="" alt="" className="thumbnail" />
+            {/* <img src="" alt="" className="thumbnail" /> */}
 
             <div className="info-col">
               <div className="name">PROJECT NAME</div>
