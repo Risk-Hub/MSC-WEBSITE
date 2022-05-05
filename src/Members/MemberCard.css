@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    margin-left: 10px;
+	margin-top: 10px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+	padding: 10px;
+    padding-bottom: 20px;
+	border-radius: 5px;
+    min-height: 250px;
+    min-width: 300px;
+    overflow: hidden;
+}
+.card:hover {   
+    background: linear-gradient(to bottom right, #5b7fff, #33ccfc);
+    box-shadow: 6px 9px 14px -7px rgba(75,123,229,0.83);
+}
+
+img, .person-img {
+    border-radius: 50%;
+    height:120px;
+    width:120px;
+    object-fit: contain;
+}
+
+.person-img {
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 4px dashed transparent;
+    transition: padding 0.3s;
+}
+
+.card:hover .person-img {
+    border:4px dashed #fff;
+    transition: 1s;
+    padding:8px;
+}
+
+/* information section */
+.person-info {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+}
+
+.full-name {
+	margin-bottom: 5px;
+	font-size: 28px;
+    font-weight: 700; 
+}
+
+.designation {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card:hover .person-info {
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s ease-out;
+}
+
+/* socials section*/
+.person-social {
+    padding: 0; 
+    margin: 10px auto;
+    max-width: 60%;  
+    position: relative;
+    bottom: -100px;
+}
+
+.card:hover .person-social {
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s ease-out;
+    
+}
+
+.list-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-social li {
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.icon{
+    
+    padding: 8px;
+    color: #1785eb;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
