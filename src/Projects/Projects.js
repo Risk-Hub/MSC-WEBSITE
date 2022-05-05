@@ -10,7 +10,7 @@ import website from "./img/link.png";
 import ongoing from "./img/ongoing.png";
 import past from "./img/past.png";
 import Footer from "./Footer.js";
-import Thumbnail from "./img/projectThumbnail.png";
+import Thumbnail from "./img/project.jpg";
 function Projects() {
   const [toggle, setToggle] = useState(0);
   return (
@@ -29,13 +29,13 @@ function Projects() {
             onClick={() => setToggle(0)}
             className={toggle === 0 ? `borderUp` : `ongoingProjects`}
           >
-            <img src={ongoing} alt="" />
+            <img src={ongoing} alt="" class="ongoingImg" />
           </div>
           <div
             onClick={() => setToggle(1)}
             className={toggle === 1 ? `borderDown ` : `pastProjects`}
           >
-            <img src={past} alt="" />
+            <img src={past} alt="" class="pastImg" />
           </div>
         </div>
 

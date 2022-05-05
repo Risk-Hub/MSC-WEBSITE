@@ -25,12 +25,28 @@ input{
     justify-content: space-between;
     /* border:2px solid red; */
     text-align: left;
+
+    animation-name: widthIncrease;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
   
+}
+@keyframes widthIncrease {
+    from{
+        width:100vw;
+    }
+    to{
+        width:80vw;
+    }
 }
 .leftHeading{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* border:2px solid blue; */
 }
 .Heading{
     text-align: left ;
@@ -40,12 +56,12 @@ input{
     font-family: 'Poppins', sans-serif;
     font-size: 100px;
     /* border:2px solid black; */
-    animation-name: moveRight;
+    /* animation-name: moveRight;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    animation-direction: normal;
+    animation-direction: normal; */
 }
 .projectAbout{
     position: relative;
@@ -64,14 +80,14 @@ input{
 .thumbnailImg{
     /* position: relative; */
     /* top:101px; */
-    width:20em;
-    height:20em;
-    animation-name: moveLeft;
+    width:30em;
+    height:30em;
+    /* animation-name: moveLeft;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    animation-direction: normal;
+    animation-direction: normal; */
 }
 @keyframes moveLeft {
     from{
@@ -88,6 +104,7 @@ input{
     display: flex;
     gap: 2rem;
     justify-content: center;
+    /* width:20em; */
 }
 .changingButtons img{
     width:20em;
@@ -98,10 +115,24 @@ input{
    cursor: pointer;
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+.ongoingProjects:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:22em;
+    box-shadow: rgba(8, 65, 156, 0.3) 0px 14px 28px, rgba(8, 65, 156, 0.3) 0px 10px 10px;
+}
 .pastProjects{
     cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 2rem;
+}
+.pastProjects:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:22em;
+    box-shadow: rgba(8, 65, 156, 0.3) 0px 14px 28px, rgba(8, 65, 156, 0.3) 0px 10px 10px;
 }
 .borderUp{
     border-radius: 2rem;
@@ -128,6 +159,10 @@ input{
 .ongoingProjects {
     margin-right: 8px;
     /* box-shadow: 8px 0px 4px 0px  green; */
+}
+.ongoingImg{
+     /* border:2px solid black; */
+     /* width:.1em; */
 }
 .buttons {
     margin-top: 2vh;
